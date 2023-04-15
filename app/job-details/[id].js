@@ -34,7 +34,10 @@ const JobDetails = () => {
         return (
           <JobAbout
             info={data[0].job_description ?? ["N/A"]}
-            benefits={data[0]?.job_benefits}
+            benefits={
+              data[0]?.job_benefits ??
+              data[0].job_highlights?.Benefits ?? ["N/A"]
+            }
           />
         );
         break;
@@ -62,10 +65,9 @@ const JobDetails = () => {
   const { data, error, isLoading, refetch } = useFetch("job-details", {
     job_id: params.id,
   });
-
-  // console.log(params);
-  // console.log(data);
-  // console.log(error);
+  console.log(error);
+  console.log(data);
+  console.log(params);
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
@@ -77,7 +79,7 @@ const JobDetails = () => {
             <ScreenHeaderBtn
               iconUrl={icons.left}
               dimension="60%"
-              handlePress={() => router.back()}
+              handlePress={() => router.push("/")}
             />
           ),
           headerRight: () => (
