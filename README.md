@@ -9,13 +9,19 @@ I use api by rapidApi-JSearch [see details]('https://rapidapi.com/letscrape-6bRB
 Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
 
 I followed a tutorial by Adrian of JSMastery
-[Youtube Channel]('https://www.youtube.com/watch?v=mJ3bGvy0WAY&t=5459s)
+[Youtube Channel]('https://www.youtube.com/watch?v=mJ3bGvy0WAY&t=5459s')
 
-## 🚀 How to use
+## 🚀 Live URL
+
+Scan QR Code [here ]('https://expo.dev/@haroonabdulrazaq/jobify_mobile?serviceType=classic&distribution=expo-go')
+
+## How to use
 
 ```sh
 npx create-react-native-app -t with-router
 ```
+
+## SECRETS
 
 API_KEY
 
