@@ -1,6 +1,6 @@
 # Jobify Mobile
 
-A job board which highlights jobs from other job board, it shows the popular jobs, Jobs Neaer by, and details of this jobs. It also include search functionality.
+A job board which highlights jobs from other job boards. It shows the popular jobs, Jobs Nearby, and details of this jobs. It also include search functionality.
 
 This is an introductory tutorial on how to build mobile applications using react-native.
 
@@ -17,6 +17,10 @@ I followed a tutorial by Adrian of JSMastery
 npx create-react-native-app -t with-router
 ```
 
+API_KEY
+
+<!-- Check .env.development for details -->
+
 ## 🚀 How to start the project
 
 ```sh
@@ -28,6 +32,10 @@ OR
 ```sh
 expo-cli start --tunnel
 ```
+
+## Deployment
+
+- This project has been deployed to [expo]('expo.dev')
 
 ## 📝 Notes
 
